@@ -24,6 +24,7 @@ public class GTNLoginTest {
         // Click on the error message
         WebElement errorMessage = driver.findElement(By.cssSelector(".login_error_msg"));
         errorMessage.click();
+        System. out. println("Enter Username & password");
 
         // Locate and input the username
         WebElement usernameField = driver.findElement(By.id("form-input-live-u"));
@@ -38,6 +39,7 @@ public class GTNLoginTest {
 
         // Click on the error message again
         errorMessage.click();
+        System. out. println("Invalid username and password");
 
         // Close the browser
         driver.quit();
